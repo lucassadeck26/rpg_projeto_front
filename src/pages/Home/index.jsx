@@ -76,7 +76,7 @@ function Home() {
       </ContainerInfo>
       <Lines />
       <AddTechs>
-        <span>Mangás</span>
+        <span>Inimigos</span>
       </AddTechs>
 
       <div>
@@ -116,9 +116,9 @@ function Home() {
                     <img className="cart-img" src={produto.imagem} alt="" />
                   </div>
                   <h2>{produto.descricao}</h2>
-                  <span>Número de paǵinas:{produto.numero_paginas}</span>
+                  <span>Número de paǵinas:{produto.name}</span>
                   <span>Preço: {produto.preco}</span>
-                  <span>Preço Promocional: {preco_Promocional}</span>
+                  <span>ataque: {produto.ataque}</span>
                   <div className="container_btn_compras">
                     <button className="btn-compras">Comprar</button>
                   </div>
@@ -131,9 +131,12 @@ function Home() {
                 <div className="container-cart-img">
                   <img className="cart-img" src={produto.imagem} alt="" />
                 </div>
-                <h2>{produto.descricao}</h2>
-                <span>Número de paǵinas:{produto.numero_paginas}</span>
-                <span>Preço: {produto.preco}</span>
+                <h2>{produto.name}</h2>
+                <span>hp: {produto.hp}</span>
+                <span>mp: {produto.mp}</span>
+                <span>xp: {produto.xp}</span>
+                <span>ataque: {produto.ataque}</span>
+                <span>defesa: {produto.defesa}</span>
                 <div className="container_btn_compras">
                   <button className="btn-compras">Comprar</button>
                 </div>

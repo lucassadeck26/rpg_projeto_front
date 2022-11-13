@@ -30,11 +30,14 @@ interface ITech {
 }
 
 export interface IProdutos {
-  descricao: string;
-  numero_paginas: number;
-  preco: number;
+  name: string;
+  hp: number;
+  mp: number;
+
+  nivel: number;
+  ataque: number;
+  defesa: number;
   imagem: string;
-  isPromo: boolean;
 }
 
 export interface ICARTPRODUTOS {
@@ -52,14 +55,6 @@ interface IUser {
   techs: ITech[];
   created_at: Date;
   updated_at: Date;
-}
-
-export interface IProdutos {
-  descricao: string;
-  numero_paginas: number;
-  preco: number;
-  imagem: string;
-  isPromo: boolean;
 }
 
 interface IUserContext {
