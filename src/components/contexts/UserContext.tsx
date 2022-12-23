@@ -148,12 +148,13 @@ const UserProvider = ({ children }: IUserProviderProps) => {
   };
 
   const handleFormRegister = (Data: IFormRegisterRegister) => {
-    console.log(Data);
-    api
-      .post("/clientes", { ...Data })
+    console.log(Data)
 
-      .then((res) => {
+    api.post("accounts/", { ...Data })
+          .then((res) => {
         console.log(`o valor de data é ${res.data}`);
+ 
+
 
         setValidation(true);
         setDisplay(true);
